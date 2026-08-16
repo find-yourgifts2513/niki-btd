@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 19th Birthday Nikitha! 🎉💖 • 17 Years of Friendship</title>
+    <meta name="description" content="A special 19th birthday gift website for Nikitha celebrating 17 years of best friendship from nursery to engineering college.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+</head>
+<body>
+
+    <!-- Animated Heart Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Background Audio Element -->
+    <audio id="bg-music" src="music.mp3" loop preload="auto"></audio>
+
+    <!-- ==========================================================================
+       1. ENTRANCE SURPRISE MODAL (AUDIO AUTOPLAY UNLOCKER)
+       ========================================================================== -->
+    <div class="entrance-overlay" id="entrance-modal">
+        <div class="entrance-card">
+            <div class="gift-icon-wrapper">🎁✨</div>
+            <div class="entrance-tag">A Special 19th Birthday Gift</div>
+            <h1 class="entrance-title">To My Best Friend Nikitha 🌸</h1>
+            <p class="entrance-subtitle">17 Years of Unbreakable Friendship • Nursery to Engineering</p>
+            <button class="btn-open-surprise" id="btn-start-experience">
+                <span>Open Birthday Gift & Music</span>
+                <span style="font-size: 1.3rem;">🎵</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       2. HERO COVER SECTION (PHOTO 1)
+       ========================================================================== -->
+    <section class="hero-section" id="hero">
+        <div class="hero-card-container">
+            <div class="hero-image-wrapper">
+                <img src="photo1.jpeg" alt="Nikitha Happy Birthday" class="hero-image" id="hero-img">
+                <div class="fairy-lights-badge">✨ Birthday Girl ✨</div>
+            </div>
+            <div class="hero-content">
+                <div class="badge-19">🎂 Celebrating 19 Years 🎂</div>
+                <h1 class="hero-title">Happy 19th Birthday, <span>Nikitha!</span></h1>
+                <div class="hero-subtitle">My Buddy & Best Friend of 17 Years ❤️</div>
+                
+                <div class="hero-quote-box">
+                    "They say people come and go, but you've been my constant since we were toddlers in nursery. Even though I can't be physically there with you today to celebrate your 19th birthday in person, my heart is right there next to you. Happy 19th Birthday to my forever buddy!"
+                </div>
+
+                <!-- 17 Years Friendship Counter -->
+                <div class="friendship-stats">
+                    <div class="stat-item">
+                        <div class="stat-num" id="stat-years">17</div>
+                        <div class="stat-label">Years Together</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" id="stat-days">6,200+</div>
+                        <div class="stat-label">Days of Smiles</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">∞</div>
+                        <div class="stat-label">Shared Memories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" onclick="document.getElementById('timeline').scrollIntoView({behavior: 'smooth'})">
+            <span>👇 Explore Our Story</span>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       3. MEMORY SCRAPBOOK TIMELINE (PHOTOS & VIDEO CARDS)
+       ========================================================================== -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-header">
+            <div class="section-tag">Memory Scrapbook</div>
+            <h2 class="section-title">17 Years of Unforgettable Chapters 📖✨</h2>
+            <p class="section-desc">Every picture holds a thousand laughs, sleepovers, dreams, and memories together.</p>
+        </div>
+
+        <div class="scrapbook-grid">
+
+            <!-- Card 1: Photo 2 (College Life Start) -->
+            <div class="scrapbook-card" onclick="openLightbox('photo2.jpeg', 'Where Our Engineering Chapter Began 🎓✨', 'From day one of college, we were determined to enjoy everyday and achieve something new together.', 'Stepping into engineering college together made everything so exciting. We made a pinky promise to make every day count, study hard, enjoy every moment, and achieve great things side-by-side!')">
+                <div class="washi-tape"></div>
+                <div class="card-media-wrapper">
+                    <img src="photo2.jpeg" alt="College Life Beginning" class="card-img">
+                    <span class="media-tag">Photo 01 • College Life</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-chapter-num">Chapter 01 • College Days</div>
+                    <h3 class="card-title">Where Our Engineering Chapter Began 🎓✨</h3>
+                    <div class="card-quote">"Determined to enjoy every single day and achieve something new together!"</div>
+                    <div class="card-footer">
+                        <span class="btn-view-memory">Read Memory Note 💌 &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Photo 3 (Funny & Joyful Moment) -->
+            <div class="scrapbook-card" onclick="openLightbox('photo3.jpeg', '17 Years of Laughter & Pure Joy ✌️😊', 'You have always been the most joyful person, making even simple escalator rides filled with laughs.', 'You have this rare, beautiful gift of bringing instant joy into any room you walk into. Whether we were making funny faces or laughing till our stomachs hurt, you always kept me happy. I wish you always stay joyful like this!')">
+                <div class="washi-tape"></div>
+                <div class="card-media-wrapper">
+                    <img src="photo3.jpeg" alt="Funny Joyful Moment" class="card-img" onerror="this.onerror=null; this.src='photo1.jpeg';">
+                    <span class="media-tag">Photo 02 • Funny Memory</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-chapter-num">Chapter 02 • Joy & Fun</div>
+                    <h3 class="card-title">17 Years of Laughter & Pure Joy ✌️😊</h3>
+                    <div class="card-quote">"Your smile has a magical way of making every single day brighter."</div>
+                    <div class="card-footer">
+                        <span class="btn-view-memory">Read Memory Note 💌 &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Photo 4 (Seminar & Academics) -->
+            <div class="scrapbook-card" onclick="openLightbox('photo4.jpeg', 'Academic Star & Future Conqueror 📚🌟', 'Captured during your seminar presentation. So proud of everything you achieve!', 'I snapped this picture while you were presenting your seminar! Watching you stand up there with so much confidence, intelligence, and grace made me so immensely proud. I hope you reach greater lengths in your life and achieve every dream!')">
+                <div class="washi-tape"></div>
+                <div class="card-media-wrapper">
+                    <img src="photo4.jpeg" alt="Seminar Presentation" class="card-img">
+                    <span class="media-tag">Photo 03 • Academic Pride</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-chapter-num">Chapter 03 • Achievements</div>
+                    <h3 class="card-title">Academic Star & Future Conqueror 📚🌟</h3>
+                    <div class="card-quote">"Reaching greater lengths and conquering every ambition!"</div>
+                    <div class="card-footer">
+                        <span class="btn-view-memory">Read Memory Note 💌 &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Video / Photo 5 (Camp Care) -->
+            <div class="scrapbook-card" onclick="openVideoLightbox('photo5.mp4', 'The Most Caring Soul at Camp ⛺️💚', 'Always caring for everyone and looking out for us in all possible ways.', 'During our camp, you were the one who always made sure everyone was safe, cared for, and fed. Your warmth and caring nature made camp feel like home.')">
+                <div class="washi-tape"></div>
+                <div class="card-media-wrapper">
+                    <video src="photo5.mp4" class="card-video" muted loop autoplay playsinline></video>
+                    <span class="media-tag">Video • Camp Moments 🎥</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-chapter-num">Chapter 04 • Camp Kindness</div>
+                    <h3 class="card-title">The Most Caring Soul at Camp ⛺️💚</h3>
+                    <div class="card-quote">"Always taking care of us in every possible way with a warm heart."</div>
+                    <div class="card-footer">
+                        <span class="btn-view-memory">Watch Video & Note 🎬 &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Photo 6 (NCC Buddy Pairs Uniform) -->
+            <div class="scrapbook-card" onclick="openLightbox('photo6.jpeg', 'Buddy Pairs Assigned by Duty, Besties by Heart 🫡🇮🇳', 'Our NCC camp buddy pairs — staying together 24/7 to ensure safety & happiness.', 'In our NCC camp, we were official buddy pairs, which meant keeping each other safe at all times. But the truth is, we have been real-life buddy pairs since nursery class! Standing side-by-side in our uniform is one of my proudest memories.')">
+                <div class="washi-tape"></div>
+                <div class="card-media-wrapper">
+                    <img src="photo6.jpeg" alt="NCC Buddy Pairs Uniform" class="card-img">
+                    <span class="media-tag">Photo 04 • NCC Uniform</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-chapter-num">Chapter 05 • Uniform Pride</div>
+                    <h3 class="card-title">Buddy Pairs in NCC Uniform 🫡🇮🇳</h3>
+                    <div class="card-quote">"Buddy pairs by duty, best friends for a lifetime!"</div>
+                    <div class="card-footer">
+                        <span class="btn-view-memory">Read Memory Note 💌 &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Photo 7 (Camp Freedom & Sleepovers) -->
+            <div class="scrapbook-card" onclick="openLightbox('photo7.jpeg', 'Freedom, 10 Days of Sleepovers & Lifetime Memories 🏕️🌙🎉', 'Final day of camp — feeling free, happy, and filled with 10 days of sleepovers.', 'That sweet feeling of freedom on our 10th and final day of camp! Sitting together on those steps after 10 days and nights of continuous sleepovers, midnight secret chats, non-stop laughter, and bonding. A memory I will cherish forever!')">
+                <div class="washi-tape"></div>
+                <div class="card-media-wrapper">
+                    <img src="photo7.jpeg" alt="Camp Last Day Sleepovers" class="card-img">
+                    <span class="media-tag">Photo 05 • Camp Last Day</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-chapter-num">Chapter 06 • Freedom & Fun</div>
+                    <h3 class="card-title">10 Days of Sleepovers & Memories 🏕️🌙🎉</h3>
+                    <div class="card-quote">"10 days and nights of continuous laughter, sleepovers & freedom!"</div>
+                    <div class="card-footer">
+                        <span class="btn-view-memory">Read Memory Note 💌 &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       4. INTERACTIVE 19TH BIRTHDAY CAKE & CANDLE BLOWOUT
+       ========================================================================== -->
+    <section class="cake-section" id="cake-section">
+        <div class="cake-container">
+            <h2 class="section-title">Blow Out Your 19 Candles! 🎂🕯️</h2>
+            <p class="section-desc">Make a wish for your 19th year, then click the button or tap the flames to blow out the candles!</p>
+
+            <div class="cake-graphic">
+                <div class="candles-row" id="candles-container">
+                    <!-- 19 Candles generated dynamically via JS -->
+                </div>
+                <svg viewBox="0 0 200 140" width="200" height="140">
+                    <!-- Bottom Layer -->
+                    <rect x="20" y="80" width="160" height="50" class="cake-layer-bottom" />
+                    <path d="M 20 80 Q 30 90, 40 80 Q 50 90, 60 80 Q 70 90, 80 80 Q 90 90, 100 80 Q 110 90, 120 80 Q 130 90, 140 80 Q 150 90, 160 80 Q 170 90, 180 80 L 180 95 L 20 95 Z" class="cake-frosting" />
+                    <!-- Top Layer -->
+                    <rect x="40" y="35" width="120" height="45" class="cake-layer-top" />
+                    <path d="M 40 35 Q 50 45, 60 35 Q 70 45, 80 35 Q 90 45, 100 35 Q 110 45, 120 35 Q 130 45, 140 35 Q 150 45, 160 35 L 160 50 L 40 50 Z" class="cake-frosting" />
+                </svg>
+            </div>
+
+            <button class="btn-blow-candles" id="btn-blow-candles">
+                <span>Blow Out All 19 Candles 💨✨</span>
+            </button>
+
+            <!-- Secret Birthday Message Box -->
+            <div class="secret-letter-box" id="secret-letter">
+                <h3 class="secret-letter-title">💌 A Special 19th Birthday Message for Nikitha</h3>
+                <div class="secret-letter-text">
+                    "Dearest Nikitha, Happy 19th Birthday! 💖<br><br>
+                    17 years ago, our journey started as toddlers in nursery class, and today we're walking through engineering together. You have been the most loyal, caring, funny, and supportive best friend anyone could ever ask for.<br><br>
+                    On your 19th birthday, I wish you endless happiness, brilliant success in all your exams and ambitions, health, and all the smiles in the world. May your 19th year be your absolute best year yet! Forever & always your best friend."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       5. 19 REASONS WHY NIKITHA IS AMAZING
+       ========================================================================== -->
+    <section class="reasons-section">
+        <div class="section-header">
+            <div class="section-tag">Sweet & Natural Sentiments</div>
+            <h2 class="section-title">19 Reasons Why You're The Best Friend Ever 💖</h2>
+            <p class="section-desc">Tap on any card to read why you mean so much!</p>
+        </div>
+
+        <div class="reasons-grid" id="reasons-grid">
+            <!-- 19 Reasons injected dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       6. FLOATING MUSIC CONTROLLER BAR
+       ========================================================================== -->
+    <div class="music-bar-fixed">
+        <div class="vinyl-disc" id="vinyl"></div>
+        <button class="btn-music-play" id="btn-toggle-music" title="Play / Pause Music">
+            <span id="music-icon">⏸️</span>
+        </button>
+    </div>
+
+    <!-- ==========================================================================
+       7. LIGHTBOX MODAL FOR FULL-SCREEN MEDIA VIEW
+       ========================================================================== -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="btn-lightbox-close" id="btn-close-lightbox">&times;</button>
+            <div id="lightbox-media-container">
+                <img src="" alt="" class="lightbox-media" id="lightbox-img">
+                <video src="" class="lightbox-media" id="lightbox-video" controls style="display:none;"></video>
+            </div>
+            <div class="lightbox-body">
+                <h3 class="lightbox-title" id="lightbox-title">Title</h3>
+                <div class="lightbox-quote" id="lightbox-quote">"Quote"</div>
+                <p class="lightbox-text" id="lightbox-text">Text content</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💖 for Nikitha's 19th Birthday • <span>17 Years of Friendship & Counting</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
